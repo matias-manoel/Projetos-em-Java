@@ -18,7 +18,7 @@ public class Computador extends Jogador
     }
     
     @Override
-    public void Tentativa(Tabuleiro tabuleiro)
+    public void tentativa(Tabuleiro tabuleiro)
     {
     }
 }

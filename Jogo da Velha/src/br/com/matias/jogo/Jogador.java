@@ -16,7 +16,7 @@ public abstract class Jogador
     
     public abstract void jogar(Tabuleiro tabuleiro);
     
-    public abstract void Tentativa(Tabuleiro tabuleiro);
+    public abstract void tentativa(Tabuleiro tabuleiro);
     
     public boolean checaTentativa(int tentativa[], Tabuleiro tabuleiro)
     {

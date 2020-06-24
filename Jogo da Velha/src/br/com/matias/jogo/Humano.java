@@ -20,12 +20,12 @@ public class Humano extends Jogador
     @Override
     public void jogar(Tabuleiro tabuleiro)
     {
-        Tentativa(tabuleiro);
+        tentativa(tabuleiro);
         tabuleiro.setPosicao(tentativa, jogador);
     }
     
     @Override
-    public void Tentativa(Tabuleiro tabuleiro)
+    public void tentativa(Tabuleiro tabuleiro)
     {
         do
         {

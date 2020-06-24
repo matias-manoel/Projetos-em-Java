@@ -10,27 +10,26 @@ public class Jogo
 {
     private Tabuleiro tabuleiro;
     private int rodada = 1, vez = 1;
-    private Jogador jogador1;
-    private Jogador jogador2;
+    private Jogador jogador1, jogador2;
     public Scanner entrada = new Scanner(System.in);
     
     public Jogo()
     {
         tabuleiro = new Tabuleiro();
         iniciarJogadores();
-        while(Jogar());
+        while(jogar());
     }
     
     public void iniciarJogadores()
     {
-        System.out.println("Quem vai ser o Jogador 1 ?");
+        System.out.println("Quem vai ser o Jogador 1?");
         if(escolherJogador() == 1)
             this.jogador1 = new Humano(1);
         else
             this.jogador1 = new Computador(1);
         
         System.out.println("----------------------");
-        System.out.println("Quem vai ser o Jogador 2 ?");
+        System.out.println("Quem vai ser o Jogador 2?");
         
         if(escolherJogador() == 1)
             this.jogador2 = new Humano(2);
@@ -40,7 +39,7 @@ public class Jogo
     
     public int escolherJogador()
     {
-        int opcao = 0;
+        int opcao;
         do
         {
             System.out.println("1. Humano");
@@ -55,7 +54,7 @@ public class Jogo
         return opcao;
     }
     
-    public boolean Jogar()
+    public boolean jogar()
     {
         if(ganhou() == 0)
         {
